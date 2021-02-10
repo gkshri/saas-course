@@ -38,3 +38,7 @@ puts simple.length
 puts simple.sum
 puts simple[simple.length-1]
 
+simple.each {|x| puts"the current number is #{x}"}
+puts "\n\n"
+complex=simple.map{|num| num*5}
+complex.each{|y| puts"the complex number is #{y}"}
