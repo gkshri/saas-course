@@ -16,4 +16,11 @@ authors = ["Bruno Munari", "Neal Stephenson", "James Clavell"]
     #     ...  
     #   }
 library={}
-tmp = books.zip(author).map{}
+tmp = books.zip(authors).map{|book,author| 
+    l=library.find{|x| x==author}
+    if l==nil
+        library[author]=book 
+    end
+}
+library.each{|l,b| puts l + b}
+#tmp.each{|e| puts e}
