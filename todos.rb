@@ -13,3 +13,28 @@ puts "my age is #{age}"
 n=5.0
 m=2
 puts "ans #{n/m}"
+puts "\n\n STRINGS"
+str="simple string"
+puts str.length
+puts str.upcase
+puts str.downcase
+puts str.capitalize
+
+puts "\n\nBOOLEAN STATEMENTS"
+
+puts "1 or 2"
+tmp = gets.chomp.to_i
+if tmp == 1 
+     puts "one"
+elsif tmp == 2 
+    puts "two"
+else  puts "default"
+end
+
+puts "\n\nARRAYS"
+
+simple=[1,2,3,4,5,6,7,8]
+puts simple.length
+puts simple.sum
+puts simple[simple.length-1]
+
